@@ -21,6 +21,17 @@ const refs = {
     );
   }
 
+  function populaitTextarea () {
+    const saveMessage = localStorage.getItem ('feedback-form-state')
+
+    if (saveMessage) {
+
+    console.log(saveMessage)
+
+    refs.textareaEl.value = saveMessage;
+    }
+  }
+
   function onFormSubmit(evt) {
     evt.preventDefault();
     const qwe = {
