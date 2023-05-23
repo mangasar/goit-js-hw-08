@@ -21,16 +21,6 @@ const refs = {
     );
   }
 
-  function onFormInput(evt) {
-    localStorage.setItem(
-      STORAGE_KEY,
-      JSON.stringify({
-        email: refs.inputEl.value,
-        message: refs.textareaEl.value,
-      })
-    );
-  }
-
   function onFormSubmit(evt) {
     evt.preventDefault();
     const qwe = {
